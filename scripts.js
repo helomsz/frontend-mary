@@ -21,7 +21,7 @@ function proximaLetra(num) {
 // Ao clicar em sortear
 document.getElementById("sortear").addEventListener("click", () => {
   if (indice >= numeros.length) {
-    document.getElementById("painel").innerText = "Todos os números já foram sorteados!";
+    alert("Todos os números já foram sorteados!");
     return;
   }
 
