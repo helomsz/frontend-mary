@@ -1,7 +1,7 @@
-// Cria lista de números de 1 a 75
+// cria lista de números de 1 a 75
 let numeros = Array.from({ length: 75 }, (_, i) => i + 1);
 
-// Embaralha os números (Fisher-Yates)
+// embaralha os números 
 for (let i = numeros.length - 1; i > 0; i--) {
   const j = Math.floor(Math.random() * (i + 1));
   [numeros[i], numeros[j]] = [numeros[j], numeros[i]];
@@ -9,7 +9,7 @@ for (let i = numeros.length - 1; i > 0; i--) {
 
 let indice = 0; // controla qual número foi sorteado
 
-// Descobre a letra do número
+// descobre a letra do número
 function proximaLetra(num) {
   if (num >= 1 && num <= 15) return "B";
   if (num >= 16 && num <= 30) return "I";
@@ -18,9 +18,10 @@ function proximaLetra(num) {
   if (num >= 61 && num <= 75) return "O";
 }
 
-// Ao clicar em sortear
+// ao clicar em sortear
 document.getElementById("sortear").addEventListener("click", () => {
   if (indice >= numeros.length) {
+    // alerta quando todos forem sorteados
     alert("Todos os números já foram sorteados!");
     return;
   }
@@ -28,10 +29,10 @@ document.getElementById("sortear").addEventListener("click", () => {
   let num = numeros[indice++];
   let letra = proximaLetra(num);
 
-  // Mostra no painel principal
+  // mostra no painel principal
   document.getElementById("painel").innerText = `${letra}${num}`;
 
-  // Adiciona número na coluna certa
+  // adiciona número na coluna certa
   let coluna = document.querySelector(`#${letra} .numeros`);
   let novoNumero = document.createElement("div");
   novoNumero.innerText = num;
