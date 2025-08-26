@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARBIE´S BINGO</title>
+    <link rel="icon" href="assets/logocirculo.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body class="fundoImagem">
+    <header>
+        <!-- CABEÇALHO -->
+        <section class="cabecalho">
+            <nav class="cabecalhoMenuNavegacao">
+                <figure class="logobarbie">
+                    <img src="assets/logonome.png" alt="logo da barbie" width="150px">
+                </figure>
+                <div class="links">
+                    <a href="index.html" class="menuNavegacaoLink" aria-label="Link Para Tela Home">Sorteador</a>
+                    <a href="cartela.html" class="menuNavegacaoLink" aria-label="Link Para Tela Produtos">Cartela</a>
+                    <!-- Dropdown para mudar de cenário -->
+                    <div class="dropdown">
+                        <button class="menuNavegacaoLink dropdown-btn" aria-label="Abrir opções de cenário">Cenários ▾</button>
+                        <div class="dropdown-content">
+                            <a href="casadabarbie.html">Casa da barbie</a>
+                            <a href="praiadabarbie.html">Praia</a>
+                            <a href="galaxiadabarbie.html">Galáxia</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <!-- CONTEÚDO PRINCIPAL -->
+        <article class="bingoContainer">
+            <!-- PAINEL DO SORTEADOR (Lado esquerdo) -->
+            <aside class="painelBox">
+                <h1 class="título">SORTEADOR</h1>
+                <output id="painel">--</output>
+                <button id="sortear">SORTEAR</button>
+            </aside>
+            <!-- TABELA DE BINGO (Lado direito) -->
+            <section class="colunas">
+                <!-- Cada letra BINGO é uma coluna com números -->
+                <article class="coluna" id="B"><h2>B</h2><ul class="numeros"></ul></article>
+                <article class="coluna" id="I"><h2>I</h2><ul class="numeros"></ul></article>
+                <article class="coluna" id="N"><h2>N</h2><ul class="numeros"></ul></article>
+                <article class="coluna" id="G"><h2>G</h2><ul class="numeros"></ul></article>
+                <article class="coluna" id="O"><h2>O</h2><ul class="numeros"></ul></article>
+            </section>
+        </article>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

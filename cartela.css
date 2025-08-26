@@ -1,0 +1,142 @@
+/* === RESET E CONFIGURAÇÃO GLOBAL === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FFE5EC;
+    color: #000000;
+  }
+
+  /* === CABEÇALHO === */
+  .cabecalho {
+    background-color: #FFC1D5;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+  .cabecalhoMenuNavegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .menuNavegacaoLink {
+    margin-left: 3rem;
+    text-decoration: none;
+    color: black; /* letras pretas */
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .menuNavegacaoLink:hover{
+    color: #FF008F;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+  }
+
+  /* === DROPDOWN === */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .dropdown-btn {
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0;
+    margin-left: 1.5rem;
+    font-family: inherit;
+  }
+
+  .dropdown-btn:hover {
+    background: none;
+    color: #555;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+  }
+
+  /* Links do dropdown */
+  .dropdown-content a {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-btn,
+  .dropdown-content a {
+      font-family: inherit;
+      font-size: 20px;
+      font-weight: 500;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f3cfda;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.cartela {
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 100px); /* largura das células */
+    grid-auto-rows: 100px; /* altura das células */
+    gap: 12px;
+    justify-content: center;
+    width: max-content; /* IMPORTANT: faz a grid ter só a largura do conteúdo */
+    padding: 12px;
+}
+
+  .cartela div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    background: #FFC1D5;
+    border: 3.5px solid #FF008F;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .cartela .titulo {
+    background: #ff1493;
+    color: white;
+    font-size: 28px;
+  }
+
+  .cartela .livre {
+    background: #98ff98;
+    border: none;
+    color: #000000;
+    font-size: 18px;
+  }
