@@ -31,7 +31,7 @@
   .menuNavegacaoLink {
     margin-left: 3rem;
     text-decoration: none;
-    color: black; /* letras pretas */
+    color: black; 
     font-size: 20px;
     font-weight: 500;
   }
@@ -104,14 +104,15 @@
     display: block;
   }
 
+/* === CARTELA === */
 .cartela {
     margin: 40px auto;
     display: grid;
-    grid-template-columns: repeat(5, 100px); /* largura das células */
-    grid-auto-rows: 100px; /* altura das células */
+    grid-template-columns: repeat(5, 100px); 
+    grid-auto-rows: 100px; 
     gap: 12px;
     justify-content: center;
-    width: max-content; /* IMPORTANT: faz a grid ter só a largura do conteúdo */
+    width: max-content;
     padding: 12px;
 }
 
